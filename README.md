@@ -1,2 +1,2 @@
-<p>NFT mint with Metaplex, React, Solana and Typescript</p>
+<p>Solana Medical Record Application With ReactJS</p>
 <img src="/screenshot.png"># hack16-solana-medita
