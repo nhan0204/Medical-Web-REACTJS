@@ -1,8 +1,9 @@
 .App {
-  /* min-height: 100vh;
+  min-height: 100vh;
+  min-width: 100vw;
   display: flex;
   justify-content: center;
-  align-items: center; */
+  align-items: center;
 }
 
 .adjustWallet{
@@ -10,4 +11,8 @@
   align-self: center !important;
   text-align: center !important;
   align-items: center !important;
+}
+
+.solanaWallet {
+  padding: 0;
 }
