@@ -158,7 +158,7 @@ const Sidebar: FC<SidebarProps> = ({ children }) => {
             />
 
             <Item
-              title="Tin nhắn"
+              title="Câu hỏi"
               to="/message"
               icon={<MessageIcon />}
               selected={selected}

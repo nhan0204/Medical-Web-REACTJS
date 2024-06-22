@@ -7,6 +7,7 @@ import { Route, Routes } from "react-router-dom";
 import Dashboard from "./scenes/dashboard";
 import Sidebar from "./scenes/global/Sidebar";
 import Topbar from "./scenes/global/Topbar";
+import Message from "./scenes/message";
 import Patient from "./scenes/patient";
 import Context from "./solana/Context";
 
@@ -29,6 +30,7 @@ const App: FC = () => {
                   <Routes>
                     <Route path="/" element={<Dashboard />}></Route>
                     <Route path="/patient" element={<Patient />}></Route>
+                    <Route path="/message" element={<Message />}></Route>
                   </Routes>
                 </main>
               </Sidebar>
