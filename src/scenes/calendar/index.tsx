@@ -91,7 +91,7 @@ const Calendar = () => {
   };
 
   return (
-    <Box margin="2% 4%">
+    <Box margin="1% 2%">
       <Header title="Đặt lịch" subtitle="Thăm khám" />
       <Box display="flex" justifyContent="space-between">
         {/* CALENDAR SIDEBAR */}
