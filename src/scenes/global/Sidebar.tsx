@@ -1,8 +1,10 @@
-import AddCircleIcon from '@mui/icons-material/AddCircle';
+import AddCircleIcon from "@mui/icons-material/AddCircle";
 import EditCalendarIcon from "@mui/icons-material/EditCalendar";
+import ExitToAppOutlinedIcon from "@mui/icons-material/ExitToAppOutlined";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
-import MessageIcon from '@mui/icons-material/Message';
+import MessageIcon from "@mui/icons-material/Message";
 import PeopleOutlinedIcon from "@mui/icons-material/PeopleOutlined";
+import SettingsSuggestOutlinedIcon from "@mui/icons-material/SettingsSuggestOutlined";
 import SpaceDashboardIcon from "@mui/icons-material/SpaceDashboard";
 import { Box, IconButton, Typography, useTheme } from "@mui/material";
 import React, { FC, ReactNode, useState } from "react";
@@ -69,7 +71,7 @@ const Sidebar: FC<SidebarProps> = ({ children }) => {
         },
       }}
     >
-      <ProSidebar collapsed={isCollapsed} >
+      <ProSidebar collapsed={isCollapsed}>
         <Menu iconShape="square">
           {/* LOGO AND MENU ICON */}
           <MenuItem
@@ -124,7 +126,7 @@ const Sidebar: FC<SidebarProps> = ({ children }) => {
             </Box>
           )}
 
-          <Box paddingLeft={isCollapsed ? undefined : "10%"} height="100%" >
+          <Box paddingLeft={isCollapsed ? undefined : "10%"} height="100%">
             <Item
               title="Bảng điều khiển"
               to="/dashboard"
@@ -161,6 +163,28 @@ const Sidebar: FC<SidebarProps> = ({ children }) => {
               title="Câu hỏi"
               to="/message"
               icon={<MessageIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
+
+            <Typography
+              variant="h6"
+              color={colors.grey[300]}
+              sx={{ m: "36%" }}
+            ></Typography>
+
+            <Item
+              title="Cài đặt"
+              to="/setting"
+              icon={<SettingsSuggestOutlinedIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
+
+            <Item
+              title="Thoát"
+              to="/logout"
+              icon={<ExitToAppOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />

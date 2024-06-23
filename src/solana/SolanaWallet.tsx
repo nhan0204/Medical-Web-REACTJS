@@ -14,12 +14,12 @@ import { FC, useCallback, useState } from "react";
 import { Connection } from "@metaplex/js";
 
 let thelamports = 0;
-let theWallet = "9m5kFDqgpf7Ckzbox91RYcADqcmvxW4MmuNvroD5H2r9";
+let theWallet = "";
 
 const SolanaWallet: FC = () => {
   let [lamports, setLamports] = useState(0.1);
   let [wallet, setWallet] = useState(
-    "9m5kFDqgpf7Ckzbox91RYcADqcmvxW4MmuNvroD5H2r9"
+    ""
   );
 
   // const { connection } = useConnection();
