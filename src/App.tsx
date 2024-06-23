@@ -12,6 +12,8 @@ import Message from "./scenes/message";
 import Patient from "./scenes/patient";
 import Request from "./scenes/request";
 import Context from "./solana/Context";
+import ProgressCircle from "./components/ProgressCircle";
+import StatBox from "./components/StatBox";
 
 require("./App.css");
 require("@solana/wallet-adapter-react-ui/styles.css");
