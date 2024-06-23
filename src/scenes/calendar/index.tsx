@@ -2,15 +2,16 @@ import dayGridPlugin from "@fullcalendar/daygrid";
 import interactionPlugin from "@fullcalendar/interaction";
 import listPlugin from "@fullcalendar/list";
 import timeGridPlugin from "@fullcalendar/timegrid";
+import RemoveIcon from "@mui/icons-material/Remove";
+import { IconButton } from "@mui/material";
 
 import {
   Box,
-  IconButton,
   List,
   ListItem,
   ListItemText,
   Typography,
-  useTheme,
+  useTheme
 } from "@mui/material";
 
 import { EventApi, formatDate } from "@fullcalendar/core";
@@ -19,7 +20,6 @@ import { useState } from "react";
 import Header from "../../components/Header";
 import { tokens } from "../../theme";
 
-import RemoveIcon from '@mui/icons-material/Remove';
 
 const Calendar = () => {
   const theme = useTheme();
@@ -50,25 +50,10 @@ const Calendar = () => {
 
   const eventRenderer = ({ event }: { event: any }) => {
     return (
-      <Box
-        // sx={{
-        //   display: "flex",
-        //   flexDirection: "row",
-        //   justifyContent: "space-between",
-        //   height: "100%"
-        // }}  
-      >
-        <Box>
-          <Typography variant="h6">{event.title}</Typography>
-          <Typography>
-            {formatDate(event.start, {
-              day: "numeric",
-              month: "short",
-              year: "numeric",
-            })}
-          </Typography>
-        </Box>
-        <IconButton
+      <Box style={{ display:'flex', flexDirection:'row', justifyContent: 'flex-start', alignItems: 'center', height:'20px'}}>
+        <Typography variant="h6" style={{ fontSize:'12px', marginLeft: '5px'}}>{event.title}</Typography>
+
+        <IconButton style={{ width:'2%', marginLeft: 'auto', marginRight: '5px' }}
           onClick={
             () => handleEventRemove(event) // Function to handle event removal
           }
@@ -91,7 +76,7 @@ const Calendar = () => {
   };
 
   return (
-    <Box margin="1% 2%">
+    <Box margin="1% 2%" style={{ gap: "0rem", padding: "20 0" }}>
       <Header title="Đặt lịch" subtitle="Thăm khám" />
       <Box display="flex" justifyContent="space-between">
         {/* CALENDAR SIDEBAR */}
