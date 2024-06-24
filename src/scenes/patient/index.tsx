@@ -2,7 +2,7 @@ import { Box, useTheme } from "@mui/material";
 import { DataGrid } from "@mui/x-data-grid";
 import { useContext } from "react";
 import Header from "../../components/Header";
-import generalData from "../../data/mockData";
+import { generalData } from "../../data/mockData";
 import { ColorModeContext, tokens } from "../../theme";
 
 const Patient = () => {
