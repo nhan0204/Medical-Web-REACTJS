@@ -93,8 +93,19 @@ const Topbar = () => {
           {/* <MenuItem onClick={handelClose}> Blog </MenuItem> */}
           {/* <MenuItem onClick={handelClose}> Poscast </MenuItem> */}
           <div className="notification_dd">
+          <ul className="notification_ul">
+            <li>
+              <div className="notify_icon">
 
+              </div>
+              <div className="notify_data">
 
+              </div>
+              <div className="notify_status">
+                
+              </div>
+            </li>
+          </ul>
           </div>
 
       </Menu>
