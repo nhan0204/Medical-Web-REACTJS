@@ -99,10 +99,15 @@ const Topbar = () => {
 
               </div>
               <div className="notify_data">
+                <div className="title">
+                
+                </div>
+                <div className="subtitle">
 
+                </div>
               </div>
               <div className="notify_status">
-                
+
               </div>
             </li>
           </ul>
