@@ -1,0 +1,77 @@
+
+.notification_dd{
+    top: 48px;
+    right: -20px;
+    width: 350px;
+    height: 100%;
+    /* max-height: 400px; 
+    overflow-y: auto; */
+    border: 1px solid #c7d8e2;
+    border-radius: 3px;
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.125), 
+    -10px -10px -30px rgba(0,0,0,0.125);
+}
+
+.notification_dd::before{
+    content: "";
+    position: absolute;
+    top: -20px;
+    right: 15px;
+    border: 10px solid;
+    border-color:transparent transparent #fff transparent ;
+}
+
+.notification_dd li{
+    border-bottom: 1px solid #f1f2f4;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.notification_dd li .notify_icon{
+
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    position: 0px;
+}
+
+.notification_dd li .notify_data{
+    margin-left: 10px;
+    width: 185px;
+}
+
+.notification_dd li .notify_status {
+    margin-left: auto; 
+}
+
+.notification_dd li .notify_data .title{
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.notification_dd li .notify_data .sub_title{
+    font-size: 13px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 5px;
+}
+
+.notification_dd li .notify_status p {
+    font-size: 12px;
+}
+
+.notification_dd li.success .notify_status p {
+    color: #47da89 !important;
+}
+
+.notification_dd li.failed .notify_status p {
+    color: #fb0001 !important;
+}
+
+.notification_dd li.show_all {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
