@@ -4,18 +4,16 @@ import NotificationsOutlinedIcon from "@mui/icons-material/NotificationsOutlined
 import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
 import SearchIcon from "@mui/icons-material/Search";
 import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
+import {
+  Box,
+  IconButton,
+  Menu,
+  useTheme
+} from "@mui/material";
 import InputBase from "@mui/material/InputBase";
 import { useContext } from "react";
 import SolanaWallet from "../../solana/SolanaWallet";
 import { ColorModeContext, tokens } from "../../theme";
-import { 
-  Box, 
-  IconButton, 
-  useTheme,
-  Menu
-}
-from "@mui/material";
-import { MenuItem } from "react-pro-sidebar";
 
 import { useState } from "react";
 
@@ -94,21 +92,35 @@ const Topbar = () => {
           {/* <MenuItem onClick={handelClose}> Poscast </MenuItem> */}
           <div className="notification_dd">
           <ul className="notification_ul">
-            <li>
+            <li className = "success">
               <div className="notify_icon">
-
+                <span className="icon"></span>
               </div>
               <div className="notify_data">
-                <div className="title">
-                
-                </div>
-                <div className="subtitle">
-
-                </div>
+              <div className="title">
+              Dinh Nhan 
+              </div>
+              <div className="sub_title">
+              t dang tren duong den
+              </div>
               </div>
               <div className="notify_status">
+                <p> Success</p>
+              </div>
+            </li>
+            <li className = "failed">
+            <div className="notify_icon">
+                <span className="icon"></span>
+              </div>
+              <div className="notify_data">
 
               </div>
+              <div className="notify_status">
+                
+              </div>
+            </li>
+            <li className="show_all">
+              <p className="link">Show All Noti</p>
             </li>
           </ul>
           </div>
